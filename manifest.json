@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Network Data Monitor",
+  "version": "1.0",
+  "description": "Monitors and displays network data usage, speed, user location, and IP address.",
+  "permissions": [
+    "activeTab",
+    "webRequest",
+    "storage",
+    "geolocation",
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
